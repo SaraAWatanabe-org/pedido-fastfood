@@ -1,0 +1,46 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: order-service-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: order-service
+      MYSQL_TEST_DATABASE: order-service_test
+      MYSQL_USER: user-admin
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    networks:
+      - local-network
+    healthcheck:
+      test: /usr/bin/mysql -uroot -prootpassword -e "SHOW DATABASES"
+
+  adminer:
+    image: adminer
+    container_name: order-service-adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - local-network
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+        - MYSQL_URL=jdbc:mysql://mysql:3306/order-service
+        - BILLING_SERVICE_URL=http://billing-service:8081
+        - PRODUCT_SERVICE_URL=http://product-service:8082
+    ports:
+      - "8081:8081"
+    networks:
+      - local-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+networks:
+  local-network:
+    driver: bridge
