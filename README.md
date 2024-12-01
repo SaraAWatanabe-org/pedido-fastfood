@@ -84,9 +84,9 @@ Arquivos disponíveis para importação:
 É possível o vídeo com explicações sobre a arquitetura e infraestrutura [clicando aqui](https://youtu.be/mXX1s7UK7mU).
 
 ## Contatos
-- [Felipe Pereira](https://github.com/SaraAWatanabe)
+- [Felipe Pereira](https://github.com/FelipecgPereira)
 - [Jequelia Santana Gomes](https://github.com/jequelia)
-- [Marcelo](https://github.com/cxmarcelo)
-- [Rafael Roseno](https://github.com/RafaelRoseno)
+- [Marcelo C Batista](https://github.com/cxmarcelo)
+- [Rafael Bernardo Roseno](https://github.com/RafaelRoseno)
 - [Sara Akemi Watanabe](https://github.com/SaraAWatanabe)
 
