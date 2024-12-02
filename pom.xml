@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.challenge</groupId>
-	<artifactId>order-service</artifactId>
+	<artifactId>SaraAWatanabe-org_pedido-fastfood-fase4e</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>fastfood</name>
+	<name>order-service</name>
 	<description>Tech Challenge FastFood</description>
 	<properties>
 		<java.version>21</java.version>
@@ -112,7 +112,6 @@
 				<artifactId>sonar-maven-plugin</artifactId>
 				<version>3.9.1.2184</version>
 			</plugin>
-			<plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
