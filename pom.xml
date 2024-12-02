@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.challenge</groupId>
-	<artifactId>order-service</artifactId>
+	<artifactId>SaraAWatanabe-org_pedido-fastfood-fase4e</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>fastfood</name>
 	<description>Tech Challenge FastFood</description>
