@@ -32,7 +32,7 @@ services:
     environment:
         - MYSQL_URL=jdbc:mysql://mysql:3306/order-service
         - BILLING_SERVICE_URL=http://billing-service:8081
-        - PRODUCT_SERVICE_URL=http://product-service:8082
+        - PRODUCTION_SERVICE_URL=http://product-service:8082
     ports:
       - "8081:8081"
     networks:

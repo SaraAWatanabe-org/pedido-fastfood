@@ -2,7 +2,9 @@ package com.challenge.fastfood.interfaceadapters.controller.response;
 
 import com.challenge.fastfood.entities.LunchItemType;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Builder;
 
+@Builder
 public record LunchItemResponse(
 
     @Schema(description = "The id of the lunch item", example = "1")
